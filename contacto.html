@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/estilos.css">
+<title>Web de contacto</title>
+</head>
+
+<body>
+   <header>
+<img src="./img/logo.png" class="imglogo" width="17%" height: auto;>
+<!-- Navegación -->
+<nav>
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li><a href="#nosotros">Nosotros</a></li>
+<li><a href="terapias.html">Terapias</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul>
+</nav>
+</header>
+
+<!-- Contenido Principal -->
+<main class="container">
+
+<!-- Sección Contacto -->
+<section id="contacto">
+<h2>Contacto</h2>
+<p>¿Querés agendar un turno o hacer una consulta? Escribinos por WhatsApp.</p>
+<div style="text-align:center; margin-top: 20px;">
+<a href="https://wa.me/549XXXXXXXXXX" class="button" target="_blank">Enviar WhatsApp</a>
+
+<!-- Formulario de Contacto-->
+<br>
+<br>
+<p>O completá el formulario:</p>
+<br>
+<br>
+    <form action="https://formspree.io/f/xnndkgnv" method="post">
+        <input type="text" name="Nombre" id="nombre" placeholder="Escriba su nombre"/>
+        <br>
+        <br>
+        <input type="email" name="Email" id="enail" placeholder="Escriba su email" /> 
+        <br>
+        <br>
+        <textarea name="Consulta:" rows="10"
+        cols="40" placeholder="Escriba su consulta aquí"></textarea>
+        <br>
+        <br>
+        <input type="submit" name="Submit" id="submit" placeholder="Enviar"/>
+    </form>
+</div>
+</section>
+<hr>
+</main>
+
+<!-- Footer -->
+<footer>
+<p>© 2025 Xenia · Centro Holístico · Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
