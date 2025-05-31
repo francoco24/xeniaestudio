@@ -1,0 +1,209 @@
+/* Tipografía general */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+main {
+  font-family: 'Josefin Sans', sans-serif;
+  background: #fdfaf6;
+  color: #3b3b3b;
+  line-height: 1.7;
+}
+
+/* Estilo del contenedor general */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0px;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  background: linear-gradient(to right, #c0e8e0, #f4d9d6);
+  text-align: center;
+  color: rgb(252, 100, 114);
+  height: auto;
+}
+
+/* esto es si no hay imagen logo, colocamos texto en header
+header h1 {
+  font-size: 3em;
+  font-weight: 600;
+  margin-bottom: 20px;
+} 
+
+header p {
+  font-size: 1.2em;
+  color: #6a6a6a;
+} */
+
+.imglogo {
+  display: block;
+  margin: 10px auto;
+  width: 35%;
+  min-width: 120px;
+  max-width: 180px;
+  height: auto;
+}
+
+/* Navegación */
+nav {
+  background: #ffffff;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  gap: 20px;            
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 10px 0;
+  text-decoration: none;
+  color: #5a8d7a;
+  font-weight: 600;
+  transition: color 0.3s, transform 0.3s ease-in-out;
+  line-height: 1.2;
+}
+
+nav ul li a:hover {
+  color: #c97474;
+  transform: scale(1.2);
+}
+
+/* Modelo responsivo */
+@media (min-width: 400px) {
+  header h1 {
+    font-size: 1.6em;
+  }
+
+  header p {
+    font-size: 0.9em;
+  }
+
+  .imglogo {
+    width: 40%;
+    min-width: 120px;
+  }
+
+  nav ul {
+    padding: 5px 0;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+  }
+
+  nav ul li a {
+    font-size: 0.95em;
+  }
+}
+
+/* Logo Pantallas mayores a 400px */
+@media (max-width: 400px) {
+  .imglogo {
+    width: 25%;
+    max-width: 220px;
+  }
+}
+
+/* Logo Pantallas grandes (desktop) */
+@media (max-width: 768px) {
+  .imglogo {
+    width: 18%;
+    max-width: 250px;
+  }
+}
+
+/* Secciones */
+section {
+  margin-bottom: 10px;
+}
+
+section h2 {
+  font-size: 2.5em;
+  color: #5a8d7a;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+section p {
+  font-size: 1.1em;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #555;
+}
+
+/* Cards de servicios */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  padding: 25px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+}
+
+.service-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #3b3b3b;
+}
+
+.service-card p {
+  font-size: 1em;
+  color: #666;
+}
+
+/* Botones */
+.button {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #5a8d7a;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-top: 20px;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background: #3e6a5e;
+}
+
+/* Footer */
+footer {
+  background: #f4d9d6;
+  text-align: center;
+  padding: 30px 0;
+  color: #6a6a6a;
+  font-size: 0.95em;
+}
+
+form {
+  display: grid;
+  width: 40%;
+  grid-template-columns: 1fr; /* Define una columna */
+  align-items: center; 
+  margin: 0 auto;
+}
