@@ -39,6 +39,7 @@ header p {
 .imglogo {
   display: block;
   margin: 10px auto;
+  padding: 15px;
   width: 35%;
   min-width: 120px;
   max-width: 180px;
