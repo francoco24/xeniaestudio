@@ -200,6 +200,12 @@ footer {
   color: #6a6a6a;
  font-size: 0.80em;
 }
+/* Footer Pantallas grandes (desktop) – Esto debe estar DESPUÉS */
+@media (min-width: 768px) {
+  footer {
+    font-size: 1em;
+  }
+}
 
 form {
   display: grid;
